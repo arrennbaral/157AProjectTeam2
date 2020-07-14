@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 8.0.20, for macos10.15 (x86_64)
+--
+-- Host: 127.0.0.1    Database: Banking System
+-- ------------------------------------------------------
+-- Server version	8.0.20
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Transfer`
+--
+
+DROP TABLE IF EXISTS `Transfer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Transfer` (
+  `amount` varchar(45) DEFAULT NULL,
+  `name` varchar(45) NOT NULL,
+  `phone_number` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Transfer`
+--
+
+LOCK TABLES `Transfer` WRITE;
+/*!40000 ALTER TABLE `Transfer` DISABLE KEYS */;
+INSERT INTO `Transfer` VALUES ('800','Billie','2233377260'),('500','Ellie','4085437536'),('600','Funet','9997773336'),('90','Gaket','9477733889'),('6000','Gal','1116663352'),('1100','Grate','8884446662'),('100','Hali','8746352637'),('900','Hayke','8364527356'),('500','Jack','8877777260'),('400','Jose','8833377364'),('200','Mill','8822277260'),('600','Nial','7733377260'),('30','Normani','8844477260'),('300','Phillip','8833377260'),('500','Sanoe','9473894627'),('500','Sui','9994446621'),('40','Taylor','9364782617');
+/*!40000 ALTER TABLE `Transfer` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-07-13 18:41:26
