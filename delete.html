@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete</title>
+</head>
+<style>
+
+body {
+  background-image: url('https://www.avanade.com/-/media/images/content/background/thinking/the-everyday-bank.jpg');
+ font-family: Comic sans MS;
+}
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+
+  padding: 20px;
+  width: 25%;
+  margin:220px 480px;
+   background: rgba(255, 255, 255, .5);
+  
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 0px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+</style>
+<body>
+ <h1 align="center">Delete Account</h1>
+<form action="delete.jsp" method="post">
+<div class="container">
+
+<label for="account"><b>Account No.</b></label>
+    <input type="text" placeholder="Please enter your account number" name="account" id="account" required>
+
+	 <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Please enter username" name="username" id="username" required>
+    
+  
+    <label   for="ssn"><b>SSN</b></label>
+    <input  type="password" placeholder="Social Security Number" name="ssn" id="ssn" required>
+
+
+ <button type="submit" class="btn">Delete</button>
+
+ 
+</div>
+</form>
+</body>
+</html>
